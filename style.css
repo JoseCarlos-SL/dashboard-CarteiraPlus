@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f6f8fb;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p {
+    color: gray;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.box-icone-header {
+    display: grid;
+    place-items: center;
+
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+
+    border-radius: 0.75rem;
+    background-color: #10b981;
+}
+
+.icone-header {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+/* ---------- CARDS PRINCIPAIS ---------- */
+
+.principais-informacoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    min-height: 6.5rem;
+    padding: 1rem;
+
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.card-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+}
+
+.card h2 {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.card p {
+    color: #111827;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.box-icone {
+    display: grid;
+    place-items: center;
+
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+}
+
+.icone {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+/* ---------- CORES DOS CARDS ---------- */
+
+#saldo-atual {
+    background-color: #eef9f6;
+    border-color: #a7e9d7;
+}
+
+#total-de-entradas {
+    background-color: #eef4ff;
+    border-color: #b8d2ff;
+}
+
+#total-de-dividas {
+    background-color: #fff3f5;
+    border-color: #f7c5cf;
+}
+
+#proxima-parcela {
+    background-color: #fff9f0;
+    border-color: #f6d29a;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 768px) {
+    header {
+        padding-inline: 1.5rem;
+    }
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    .principais-informacoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .card {
+        min-height: 7rem;
+        padding: 1.25rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 1024px) {
+    main {
+        width: min(96%, 1600px);
+        max-width: 1600px;
+        margin-inline: auto;
+        padding: 3rem 2rem;
+    }
+
+    .principais-informacoes {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card {
+        min-height: 10rem;
+        padding: 2rem;
+        border-radius: 1.25rem;
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: clamp(1.8rem, 2vw, 2.2rem);
+    }
+
+    .box-icone {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 1rem;
+    }
+
+    .icone {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}
