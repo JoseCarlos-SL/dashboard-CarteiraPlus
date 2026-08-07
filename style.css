@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
     min-height: 100vh;
     background-color: #f6f8fb;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 1rem;
 }
 
 p {
@@ -114,6 +115,114 @@ main {
     object-fit: contain;
 }
 
+/* ---------- PAINEL ENTRADAS---------- */
+.entradas{
+    margin-bottom: 2rem;
+}
+
+/* ---------- PAINEL DÍVIDAS---------- */
+.dividas .box-geral .box-geral-direito p{
+    color: #ff0000;
+}
+    
+
+
+/* ---------- PAINEIS---------- */
+
+.painel {
+    padding: 2rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #acacac;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.box-cima-painel{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 2rem 1rem;
+}
+
+.box-cima-painel .texto-painel{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    
+}
+/* ---------- BOTÃO + NOVA ---------- */
+.painel button{
+    all: unset;
+    background-color: black;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.painel button:hover{
+    background-color: #3b3b3b;
+    transform: scale(1.1);
+    
+}
+/* ---------- BOX GERAL ---------- */
+.box-geral{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #acacac;
+}
+
+.box-geral .box-geral-esquerdo{
+    width: 50%;
+}
+
+.box-geral .box-geral-direito{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.box-geral .box-geral-direito p{
+    color: #10b981;
+    font-weight: 700;
+}
+
+/* .box-icone-lixeira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border: 1px solid #acacac;
+    border-radius: 0.75rem;
+} */
+
+.icone-lixeira {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+}
+
+.icone-lixeira:hover{
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%)
+            saturate(5000%) hue-rotate(355deg);
+}
 /* ---------- CORES DOS CARDS ---------- */
 
 #saldo-atual {
