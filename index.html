@@ -19,13 +19,33 @@
             <p>Seu dashboard financeiro</p>
         </div>
     </header>
+
+    <div id="modal" class="modal">
+    <div class="modal-conteudo">
+
+        <button id="fechar-modal" class="fechar-modal">×</button>
+
+        <h2>Nova movimentação</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Ex: Salário">
+
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" placeholder="Ex: 1500">
+
+        </select>
+
+        <button id="adicionar">Adicionar</button>
+
+    </div>
+</div>
     <main>
         <section class="principais-informacoes">
 
             <article id="saldo-atual" class="card">
                 <div class="card-texto">
                     <h2>Saldo Atual</h2>
-                    <p>R$ 1.000,00</p>
+                    <p id="valor-total-de-saldo"></p>
                 </div>
                 <div class="box-icone">
                     <img class="icone" src="icons/carteira.png" alt="">
@@ -35,7 +55,7 @@
             <article id="total-de-entradas" class="card">
                 <div class="card-texto">
                     <h2>Total de Entradas</h2>
-                    <p>R$ 1.000,00</p>
+                    <p id="valor-total-de-entradas"></p>
                 </div>
                 <div class="box-icone">
                     <img class="icone" src="icons/aumentar.png" alt="">
@@ -44,7 +64,7 @@
             <article id="total-de-dividas" class="card">
                 <div class="card-texto">
                     <h2>Total de Dívidas</h2>
-                    <p>R$ 1.000,00</p>
+                    <p id="dividas"></p>
                 </div>
                 <div class="box-icone">
                     <img class="icone" src="icons/diminuir.png" alt="">
@@ -53,7 +73,7 @@
             <article id="proxima-parcela" class="card">
                 <div class="card-texto">
                     <h2>Próxima Parcela</h2>
-                    <p>R$ 1.000,00</p>
+                    <p id="pParcela"></p>
                 </div>
                 <div class="box-icone">
                     <img class="icone" src="icons/calendario.png" alt="">
@@ -61,93 +81,38 @@
             </article>
 
         </section>
+<!-- ---------------------Entradas---------------------       -->
         <section class="entradas">
             <article class="painel">
                 <div class="box-cima-painel">
                     <div class="texto-painel">
                         <h3>Entradas</h3>
-                        <p>3 registro(s)</p>
+                        <p class=""></p>
                     </div>
                     <button class="nova">+ Nova</button>
                 </div>
-
-
-                <div class="box-geral">
-                    <div class="box-geral-esquerdo">
-                        <h4>Salário mensal</h4>
-                    </div>
-                    <div class="box-geral-direito">
-                        <p>R$3.000</p>
-                        <div class="box-icone-lixeira"><img class="icone-lixeira" src="icons/lixeira.png" alt=""></div>
-
-                    </div>
-                </div>
-
-                <div class="box-geral">
-                    <div class="box-geral-esquerdo">
-                        <h4>Freelance</h4>
-                    </div>
-                    <div class="box-geral-direito">
-                        <p>R$800</p>
-                        <div class="box-icone-lixeira"><img class="icone-lixeira" src="icons/lixeira.png" alt=""></div>
-
-                    </div>
-                </div>
-
-                <div class="box-geral">
-                    <div class="box-geral-esquerdo">
-                        <h4>Projeto 12 meses</h4>
-                    </div>
-                    <div class="box-geral-direito">
-                        <p>R$100.000</p>
-                        <div class="box-icone-lixeira"><img class="icone-lixeira" src="icons/lixeira.png" alt=""></div>
-
-                    </div>
-                </div>
             </article>
         </section>
-
-        <section class="dividas">
+<!-- ---------------------Entradas---------------------       -->
+<!-- ---------------------dividas---------------------       -->
+       <section class="dividsa">
             <article class="painel">
                 <div class="box-cima-painel">
                     <div class="texto-painel">
-                        <h3>Dívidas</h3>
-                        <p>2 Dívida(s) Ativa(s)</p>
+                        <h3>Entradas</h3>
+                        <p class=""></p>
                     </div>
                     <button class="nova">+ Nova</button>
                 </div>
-
-
-                <div class="box-geral">
-                    <div class="box-geral-esquerdo">
-                        <h4>Notebook</h4>
-                    </div>
-                    <div class="box-geral-direito">
-                        <p>R$-3.000</p>
-                        <div class="box-icone-lixeira"><img class="icone-lixeira" src="icons/lixeira.png" alt=""></div>
-
-                    </div>
-                </div>
-
-                <div class="box-geral">
-                    <div class="box-geral-esquerdo">
-                        <h4>Carro</h4>
-                    </div>
-                    <div class="box-geral-direito">
-                        <p>R$-100.000</p>
-                        <div class="box-icone-lixeira"><img class="icone-lixeira" src="icons/lixeira.png" alt=""></div>
-
-                    </div>
-                </div>
-
             </article>
         </section>
-
+<!-- ---------------------Entradas---------------------       -->
 
     </main>
     <footer>
 
     </footer>
+    <script src="script.js" ></script>
 </body>
 
 </html>
