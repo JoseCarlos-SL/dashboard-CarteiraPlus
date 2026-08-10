@@ -311,3 +311,81 @@ main {
         height: 2.25rem;
     }
 }
+
+/* ---------- CRIAR TRANSAÇÃO ---------- */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-conteudo {
+    position: relative;
+
+    width: 90%;
+    max-width: 400px;
+
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-conteudo input,
+.modal-conteudo select {
+    padding: 0.8rem;
+
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+#add-movimentacao {
+    padding: 0.8rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+.fechar-modal {
+    position: absolute;
+
+    top: 1rem;
+    right: 1rem;
+
+    border: none;
+    background: none;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.modal #adicionar{
+    all: unset;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
