@@ -13,6 +13,7 @@ Implementado
 -Cadastro de novas entradas
 
 Exclusão de entradas
+
 -Cálculo automático do total de entradas
 -Atualização do saldo atual
 -Armazenamento dos dados no navegador
