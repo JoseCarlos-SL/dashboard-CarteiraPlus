@@ -7,7 +7,9 @@ O Carteira + é um projeto de dashboard financeiro desenvolvido para praticar HT
 Atualmente, o projeto permite cadastrar e excluir entradas financeiras, calculando automaticamente o total de entradas e o saldo atual. Os dados cadastrados também são mantidos salvos para não serem perdidos ao atualizar a página.
 
 🚧 Funcionalidades
+
 Implementado
+
 Cadastro de novas entradas
 Exclusão de entradas
 Cálculo automático do total de entradas
