@@ -10,13 +10,14 @@ Atualmente, o projeto permite cadastrar e excluir entradas financeiras, calculan
 
 Implementado
 
-Cadastro de novas entradas
-Exclusão de entradas
-Cálculo automático do total de entradas
-Atualização do saldo atual
-Armazenamento dos dados no navegador
-Em desenvolvimento
-Cadastro e controle de dívidas
+-Cadastro de novas entradas
+
+-Exclusão de entradas
+-Cálculo automático do total de entradas
+-Atualização do saldo atual
+-Armazenamento dos dados no navegador
+-Em desenvolvimento
+-Cadastro e controle de dívidas
 Cálculo do total de dívidas
 Controle da próxima parcela
 Atualização do saldo considerando entradas e dívidas
